@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/styleMain.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-                <script src="js/CandidatoVista.js"></script>
+                <script src="./js/CandidatoVista.js"></script>
 	</head>
 	<body>
 		<div id="page-wrapper">
