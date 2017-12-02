@@ -1,6 +1,8 @@
 window.onload = function() {
-    submit = document.getElementById("boton");
-    submit.addEventListener("click",getCandidatosNoRegistrados);
+    //submit = document.getElementById("boton");
+    //submit.addEventListener("click",getCandidatosNoRegistrados);
+    submitRegistrarse = document.getElementById("btnRegistrarse");
+    submitRegistrarse.addEventListener("onclick",setCandidato);
 }
 
 function getCandidatosNoRegistrados(){
@@ -31,6 +33,32 @@ function getCandidatosNoRegistrados(){
             }
         }
        info.innerHTML= json;                  
+    });
+}
+
+function setCandidato() {
+    nombre = document.getElementById("inpNombre");
+    email = document.getElementById("inpEmail");
+    contrasena = document.getElementById("inpContrasena");
+    var datos = {
+        "nombre" : nombre,
+        "email" : email,
+        "contrasena" : contrasena
+    }
+    console.log("entre");
+    $.ajax({
+        url: "../logica/CerebroCandidato.php",
+        type: "post",
+        data: { option: "registrarCandidato", datos }
+    })
+    .sucess
+    .done(function(respu){
+        console.log("respuesta : " + respu);
+        //info = document.getElementById("info");                  
+        //json = JSON.parse(respu);
+        //console.log("nombre:"+ json[0]["nombre"]);
+
+        //info.innerHTML= json;                  
     });
 }
 

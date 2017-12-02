@@ -12,6 +12,8 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="css/styleMain.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+                <script src="js/CandidatoVista.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -54,33 +56,25 @@
     <legend  style="font-size: 18pt"><b>Registro</b></legend>
     <div class="form-group">
       <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
-      <input type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+      <input id="inpNombre" type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
     </div>
     <div class="form-group">
       <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
-      <input type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
+      <input id="inpEmail" type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
     </div>
     <div class="form-group">
       <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu Password</b></label>
-      <input type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
+      <input id="inpContrasena" type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
     </div>
-    <div class="form-group">
-      <label style="font-size: 14pt"><b>Repite tu contraseña</b></label>
-      <input type="password" name="rpass" class="form-control" required placeholder="repite contraseña" />
-    </div>
-      
+    <!--Aqui van los datos que solicita el formulario-->
+    
     </div>
    
-    <input  class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+    <input id="btnRegistrarse" class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
 
   </fieldset>
 </form>
 </div>
-<?php
-		if(isset($_POST['submit'])){
-			require("registro.php");
-		}
-	?>
 <!--Fin formulario registro -->
 
 
