@@ -5,7 +5,7 @@ window.onload = function() {
 
 function getCandidatosNoRegistrados(){
     $.ajax({
-        url: "logica/CerebroCandidato.php",
+        url: "../logica/CerebroCandidato.php",
         type: "GET",
         data: { option: "candidatosNoAceptados",datos:"null" }
     }).done(function(respu){

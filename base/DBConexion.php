@@ -38,7 +38,7 @@ class DBConexion {
                 .')'
                 .mysqli.connect_error());
         }
-        echo 'Conexion exitosa'.mysqli_get_host_info($this->conexion).'<br>';
+        //echo 'Conexion exitosa'.mysqli_get_host_info($this->conexion).'<br>';
     }
     
     function consulta($consulta){

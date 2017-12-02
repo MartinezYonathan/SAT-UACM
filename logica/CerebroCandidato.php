@@ -6,9 +6,9 @@ include '../base/candidatoDBHelper.php';
  *
  * @author marco
  */
-class CerebroCandidato {
+//class CerebroCandidato {
     //put your code here
-    function getCandidatosNoAceptados() {
+//    function getCandidatosNoAceptados() {
         $datos = $_GET['datos'];
         $method = $_SERVER['REQUEST_METHOD'];
         /*
@@ -25,7 +25,7 @@ class CerebroCandidato {
             echo $mHelperCandidato->getNoAceptados();
 
         }
-    }
-}
+ //   }
+//}
 
 ?>
