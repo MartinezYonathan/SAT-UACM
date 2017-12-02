@@ -11,11 +11,18 @@ class DBConexion {
     private $nomBaseDeDatos;
     private $conexion;
     
-    function __construct($usuario, $contrasena, $servidor, $nomBaseDeDatos) {
+    /*function __construct($usuario, $contrasena, $servidor, $nomBaseDeDatos) {
         $this->usuario = $usuario;
         $this->contrasena = $contrasena;
         $this->servidor = $servidor;
         $this->nomBaseDeDatos = $nomBaseDeDatos;
+    }*/
+    
+    function __construct() {
+        $this->usuario = "sql3208221";
+        $this->contrasena = "lPMsPBIfZs";
+        $this->servidor = "sql3.freemysqlhosting.net";
+        $this->nomBaseDeDatos = "sql3208221";
     }
     
     function conectar() {
@@ -32,6 +39,11 @@ class DBConexion {
                 .mysqli.connect_error());
         }
         echo 'Conexion exitosa'.mysqli_get_host_info($this->conexion).'<br>';
+    }
+    
+    function consulta($consulta){
+        //return mysqli_query($this->conexion, $consulta); 
+        return $this->conexion->query($consulta);
     }
     
     function cerrarConexion() {

@@ -181,5 +181,4 @@ class candidato {
     function setAsesor($asesor) {
         $this->asesor = $asesor;
     }
-    
 }
