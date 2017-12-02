@@ -50,16 +50,17 @@ function setCandidato() {
         url: "../logica/CerebroCandidato.php",
         type: "POST",
         data: { option: "registrarCandidato",
-                nombre: "nombre",
-                email: "email",
-                contrasena: "constrasena"
+                nombre: nombre,
+                email: email,
+                contrasena: contrasena
               }
     })
     .done(function(respu){
         console.log("regreso resp");
         console.log("respuesta : " + respu);
         //info = document.getElementById("info");  
-        //json = JSON.parse(respu);
+        //var json = JSON.parse(respu);
+        //console.log(json);
         //console.log("nombre:"+ json[0]["nombre"]);
         
         //info.innerHTML= json;

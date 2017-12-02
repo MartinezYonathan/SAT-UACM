@@ -27,6 +27,7 @@
         }*/
  //   }
 //}
+    $opcion = $_POST['opcion'];
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contrasena = $_POST['contrasena'];
