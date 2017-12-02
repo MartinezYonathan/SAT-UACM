@@ -5,7 +5,6 @@
  * @author marco
  */
 class candidato {
-    //put your code here
     private $id;
     private $imageIcon;
     private $nombre;

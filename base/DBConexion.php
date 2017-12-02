@@ -42,8 +42,8 @@ class DBConexion {
     }
     
     function consulta($consulta){
-        //return mysqli_query($this->conexion, $consulta); 
-        return $this->conexion->query($consulta);
+        return mysqli_query($this->conexion, $consulta);
+        //return $this->conexion->query($consulta);
     }
     
     function cerrarConexion() {

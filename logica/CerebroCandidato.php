@@ -30,8 +30,6 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contrasena = $_POST['contrasena'];
-    
     $respuesta = "entre con: " . $nombre . ", " . $email . ", " . $contrasena;
-    
     echo $respuesta;
 ?>
