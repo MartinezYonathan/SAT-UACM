@@ -1,5 +1,5 @@
 <?php
-include '../base/DBConexion.php';
+include '../persistencia/DBConexion.php';
 include '../logica/candidato.php';
 
 class candidatoDBHelper {
@@ -83,5 +83,6 @@ class candidatoDBHelper {
                 . "$horarioTrabajo" . "," . "$cartaComp" . "," . "$cartaExpo" 
                 . ")";
         $this->conexion->consulta($sql);
+        $this->conexion->cerrarConexion();
     }
 }

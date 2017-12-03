@@ -51,29 +51,83 @@
 							<section>
 <!-- formulario registro -->
 
-<form>
   <fieldset>
     <legend  style="font-size: 18pt"><b>Registro</b></legend>
     <div class="form-group">
-      <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
-      <input id="inpNombre" type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+      <label style="font-size: 14pt;"><b>Seleccione foto de candidato </b></label>
+      <form accept-charset="utf-8" id="enviarimagenes" enctype="multipart/form-data" >
+      <input id="fotoCandidato" name="imagen" type="file"/>
+      </form>
+      <!--<img id="mostrarImagen"/>-->
     </div>
     <div class="form-group">
-      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
-      <input id="inpEmail" type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
+      <label style="font-size: 14pt"><b>Nombre(s) </b></label>
+      <input id="Nombre" type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
     </div>
     <div class="form-group">
-      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu Password</b></label>
-      <input id="inpContrasena" type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
+      <label style="font-size: 14pt"><b>Apellido paterno </b></label>
+      <input id="ApePat" type="text" name="realname" class="form-control" placeholder="Apellido paterno" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Apellido materno </b></label>
+      <input id="ApeMat" type="text" name="realname" class="form-control" placeholder="Apellido materno" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Correo electronico </b></label>
+      <input id="Email" type="email" name="nick" class="form-control"  required placeholder="Correo electronico"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Celular </b></label>
+      <input id="Celular" type="text" name="nick" class="form-control"  required placeholder="Celular"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Matricula </b></label>
+      <input id="Matricula" type="text" name="nick" class="form-control"  required placeholder="xx-xxx-xxxx"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Carrera </b></label>
+      <input id="Carrera" type="text" name="nick" class="form-control"  required placeholder="Carrera"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Creditos </b></label>
+      <input id="Creditos" type="number" name="nick" class="form-control"  required placeholder="Creditos"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>temaTesis </b></label>
+      <input id="TemaTesis" type="text" name="nick" class="form-control"  required placeholder="Tema de Tesis"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Director de tesis </b></label>
+      <input id="DirectorTesis" type="text" name="nick" class="form-control"  required placeholder="Director de tesis"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Lugar de Trabajo </b></label>
+      <input id="LugarTrabajo" type="text" name="nick" class="form-control"  required placeholder="Lugar de trabajo"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>HorarioTrabajo </b></label>
+      <input id="HoraroTrabajo1" type="time"/>am  a  <input id="HoraroTrabajo2" type="time"/>pm
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Carta compromiso </b></label>
+      <input id="CartaCompromiso" type="file"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Carta Exposicion de motivos </b></label>
+      <input id="CartaExpoMotivos" type="file"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt;"><b>Contraseña </b></label>
+      <input id="Contrasena" type="password" name="pass" class="form-control"  placeholder="Contraseña" />
     </div>
     <!--Aqui van los datos que solicita el formulario-->
     
     </div>
    
-    <input id="btnRegistrarse" class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+    <input id="btnRegistrarse" class="btn btn-danger" type="button" name="submit" value="Registrarse"/>
 
   </fieldset>
-</form>
+    
 </div>
 <!--Fin formulario registro -->
 

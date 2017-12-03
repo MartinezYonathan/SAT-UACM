@@ -24,17 +24,15 @@ class candidato {
     private $cartaExpoMotivos;
     private $asesor;
     
-    function __construct($id, $nombre, $apellidoPaterno, $apellidoMaterno,
-                         $contrasena, $matricula, $email, $celular, $carrera) {
-        $this->id = $id;
-        $this->nombre = $nombre;
+    function __construct() {
+        /*$this->nombre = $nombre;
         $this->apellidoPaterno = $apellidoPaterno;
         $this->apellidoMaterno = $apellidoMaterno;
         $this->contrasena = $contrasena;
         $this->matricula = $matricula;
         $this->email = $email;
         $this->celular = $celular;
-        $this->carrera = $carrera;
+        $this->carrera = $carrera;*/
     }
     
     function getId() {
