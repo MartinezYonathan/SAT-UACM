@@ -3,6 +3,7 @@
 	TXT by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+        Creado por Javier Monroy Salcedo
 -->
 <html>
     <head>
@@ -13,27 +14,9 @@
 	<link rel="stylesheet" href="css/styleMain.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/valCandidato.js"></script>
         <script>
-            window.onload = function() {
-            submit = document.getElementById("boton");
-            submit.addEventListener("click",getCandidatosNoRegistrados);
-            }
-            function getCandidatosNoRegistrados(){
-                console.log("entro a la funcion");
-                   
-                $.ajax({
-                    url: "Persistencia/helperCandidato.php",
-                    type: "GET",
-                    data: { option: "candidatosNoAceptados",datos:"null" }
-                }).done(function(respu){
-                   console.log("respuesta : " + respu);
-                   info = document.getElementById("info");
-                   console.log("nombre:"+ respu.NOMBRE);
-                   obj = JSON.parse(respu);
-                   info.innerHTML= obj;
-                   
-                });
-            }
+            
         </script>
     </head>
     <body>
@@ -64,22 +47,11 @@
                 <div class="row main-row">
                 <div class="12u">
 
-                    <section>
-                        <h2>ver candidato</h2>
+                    <section id="infoSeccion">
+                        <h2>Lista de candidatos no aceptados en algun seminario.</h2>
                                                                 
-                            <div id="info" class="cuadro">
-                                <table id="datos">
-                                    <tr><td id="foto"></td></tr>
-                                    <tr><td id="Nombre"></td></tr>
-                                    <tr><td id="matricula"></td></tr>
-                                    <tr><td id="carrera"></td></tr>
-                                    <tr><td id="creditos"></td></tr>
-                                    <tr><td id="cartaCompromiso"></td></tr>
-                                    <tr><td id="cartaMotivos"></td></tr>
-                                    <tr><td id="controls"></td></tr>
-                                </table>
-                            </div>      
-                        <input type="submit" id="boton">					
+                                  
+                      					
                     </section>
 
                 </div>
