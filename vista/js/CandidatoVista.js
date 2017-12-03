@@ -67,7 +67,7 @@ function setCandidato() {
     };*/
     //console.log("entre");
     $.ajax({
-        url: "../logica/CerebroCandidato.php",
+        url: "../logica/CerebroCandidatoMarco.php",
         type: "POST",
         data: { option: "registrarCandidato",
                 formData,
